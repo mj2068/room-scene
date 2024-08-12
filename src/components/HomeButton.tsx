@@ -1,9 +1,15 @@
-import { ButtonHTMLAttributes, PropsWithChildren } from "react";
 import HomeIcon from "@/assets/home-svgrepo-com.svg";
 
-export default function HomeButton({
-  children,
-  ...props
-}: PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement>>) {
-  return <button>{HomeIcon}</button>;
+export default function HomeButton() {
+  //
+  return (
+    <button
+      className="round"
+      onClick={() => {
+        location.href = "/demo";
+      }}
+    >
+      <img src={HomeIcon} className="medium" />
+    </button>
+  );
 }
