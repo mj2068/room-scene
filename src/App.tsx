@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import HomeButton from "./components/HomeButton";
 import RoomScene from "./components/RoomScene";
 
@@ -12,9 +13,9 @@ function App() {
         </div>
 
         <div className="desc-container">
-          <h1>描述</h1>
+          <h1>开发说明</h1>
           <p>
-            这是一个适配PC浏览器的简易三维场景展示。实现功能包含动态物体模型位置及转动角度；相机的运动及焦点追踪；实时柔和阴影；两种灯光分别为方向性灯光和聚光投射灯光；泛光Bloom后处理效果。
+            这是一个适配PC浏览器的简易3D场景展示示例。实现功能包含动态物体模型位置及转动角度；相机的运动及焦点追踪；实时柔和阴影；两种灯光分别为方向性灯光和聚光投射灯光；泛光Bloom后处理效果。
           </p>
           <p>
             依托于@react-three/fiber的React渲染封装，用JSX声明式语法编辑场景，代码实现较原生three.js大大简化，加快开发速度。
@@ -81,9 +82,7 @@ function App() {
         </div>
       </main>
 
-      <footer>
-        鲁ICP备<span>2022041953号-1</span>
-      </footer>
+      <Footer />
     </div>
   );
 }
